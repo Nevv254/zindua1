@@ -3,36 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Intro</title>
+    <title>My website</title>
 </head>
 <body>
-    <h1>
-        This is our first heading!!
-    </h1>
+    <header>
+        <h1>Welcome to Nevv's website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </header>
+    <main>
+        <section>
+           <h1>Home</h1>
+            <p>Welcome to our website</p>
+            <button>Get started</button>
+        </section>
+    <hr>   
+        <section>
+            <h1>About</h1>
+            <p>About Us</p>
+            <p>We are a team of passionate individuals.</p>
+            <button>Learn more</button>
+        </section>
+
+    <hr>
+
+        <section>
+            <h1>Contact Us</h1>
+            <p> <a href="mailto:nevillenzioki19@gmail.com">If you have any questions, feel free to reach out! on</a></p>
+            <button>Get in touch</button>
+        </section>
+    <hr>
+        <article>
+            <h1>Latest news</h1>
+            <p>Stay tuned for the latest updates and news from our team.</p>
+            <button>Read more</button>
+        </article>
+
+      <hr>
+
+        <aside>
+            <h2>Related links</h2>
+            <ul>
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+                <li><a href="#link3">Link 3</a></li>
+            </ul>
+      
+      <hr>
+       
+ <div>
+      <!-- validation -->
+      <fieldset>
+          <legend><b>Validation</b></legend>
+          <p>Please fill out the following fields:</p>
+        <label for ="username"><em><b>Enter your name:</b></em> </label>
+        <input type="name" name="Enter your name" placeholder="Enter your name" id="username" required>
+       
+        <br>
+       
+        <label for ="age"><em><b>Enter your age</b></em> :</label>
+        <input type="number" name="Enter your age" placeholder="age" id="age" min="18" max="100" required>
+        
+        <br>
+       
+        <label for ="email"><em><b>Enter your email:</b></em> </label>
+        <input type="email" name="Enter your email" placeholder="Enter your email" id="email" required>
+       
+        <br>
+       
+        <label for ="password"><em><b>Enter your password:</b></em> </label>
+        <input type="password" name="Enter your password" placeholder="Enter your password" id="password" required>
+       
+        <br>
+       
+        <input type="submit" value="Submit">
+        <p>Click the button to submit your information.</p>
+        <button type="submit">Submit</button>
+       
+        <p>Click the button to reset your information.</p>
+        <button type="reset">Reset</button>
+
+ </fieldset>
+    <!-- range slider -->
+   <fieldset>
+     <legend><b>Range Slider</b></legend>
+     <label for="range"><em><b>Select a value:</b></em> </label>
+     <input type="range" id="range" name="range" min="1" max="100"  step="1" value="50">
+   </fieldset>
+
   
-    <h2>
-        This is our second heading!!
-    </h2>
-   
-    <h3>
-        This is our third heading!!
-    </h3>
-   
-    <h4>
-        This is our fourth heading!!
-    </h4>
+   <!-- color picker -->
+    <fieldset>
+        <legend><b>Color Picker</b></legend>
+        <label for="color"><em><b>Select a color:</b></em> </label>
+        <input type="color" id="color" name="color" value="#ff0000">
+    </fieldset>
+
+
+   <!-- Date and Time Picker -->
+    <fieldset>
+        <legend><b>Date and Time Picker</b></legend>
+        <label for="dob"><em><b>Select a date:</b></em> </label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <label for="time"><em><b>Select a time:</b></em> </label>
+        <input type="time" id="time" name="time">
+   </fieldset>
+
+ <hr>
+ 
+ <!--embedding images-->
+ <div>
+     <h2>Embedding Images</h2>
+     <p>Below is an example of how to embed an image:</p>
+     <img src="Images\Snapchat-1808286494.jpg" alt="Sample Image" width="450" height="500">
+ </div>
+
+ <br>
+
+ <!-- embedding video -->
+   <div>
+       <h2>Embedding Video</h2>
+       <p>Below is an example of how to embed a video:</p>
+       <video controls width="320" height="240">
+           <source src="videos\4440937-hd_1920_1080_25fps.mp4" type="video/mp4">
+           Your browser does not support this video.
+       </video>
+   </div>
+
+   <!-- embedding audio -->
+   <div>
+       <h2>Embedding Audio</h2>
+       <p>Below is an example of how to embed audio:</p>
+       <audio controls>
+           <source src="Audio\RUSH HOUR 11 ONE DROP RIDDIM DANCEHALL MIXTAPE TWO WIJJE WILLIE.mp3" type="audio/mpeg">
+           Your browser does not support this audio file.
+       </audio>
+   </div>
+
+   <!-- select dropdown-->
+        <label for="country"><em><b>Select your country:</b></em> </label>
+        <select name="country" id="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>    
+            <option value="China">China</option>
+            <option value="India">India</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="South Africa">South Africa</option>
+        </select>
+
+<br>
+<br>    
+
+        <!-- radio buttons -->
+     <fieldset>
+            <legend>Choose your favorite color:</legend>
+            <label for="red"><em><b>Red</b></em> </label>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="green"><em><b>Green</b></em> </label>
+            <input type="radio" name="color" id="green" value="green">
+            <label for="blue"><em><b>Blue</b></em> </label>
+            <input type="radio" name="color" id="blue" value="blue">
+     </fieldset>
+     
+        <br>
+       <!-- text area   -->
+        <label for="message"><em><b>Enter your message:</b></em> </label>
+        <br>
+        <textarea name="message" id="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+
+        <br>
+       
+
+        <!-- checkbox -->
+        <fieldset>
+            <legend>Select your hobbies:</legend>
+            <label for="reading"><em><b>Reading</b></em> </label>
+            <input type="checkbox" name="hobby" id="reading" value="reading">
+            <label for="traveling"><em><b>Traveling</b></em> </label>
+            <input type="checkbox" name="hobby" id="traveling" value="traveling">
+            <label for="sports"><em><b>Sports</b></em> </label>
+            <input type="checkbox" name="hobby" id="sports" value="sports">
+        </fieldset>
+
+        <br>
+      
+  <!-- grouping form elements-->
+ 
     
-    <h5>
-        This is our fifth heading!!
-    </h5>
-   
-    <h6>
-        This is our sixth heading!!
-    </h6>
+    <div>
+        <form action="/submit" method="post">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label for="fname"><em><b>Enter your first name:</b></em> </label>
+            <input type="text" name="Enter your first name" placeholder="Enter your first name" id="fname" required>
+
+            <br>
+
+            <label for="lname"><em><b>Enter your last name:</b></em> </label>
+            <input type="text" name="Enter your last name" placeholder="Enter your last name" id="lname" required>
+
+             <br>
+
+            <label for="mname"><em><b>Enter your middle name:</b></em> </label>
+            <input type="text" name="Enter your middle name" placeholder="Enter your middle name" id="mname" required>
+
+            <br>
+
+            <label for="age"><em><b>Enter your age:</b></em> </label>
+            <input type="number" name="Enter your age" placeholder="age" id="age" min="18" max="100" required>
+    
+            <br>
+    
+            <label for="email"><em><b>Enter your email:</b></em> </label>
+            <input type="email" name="Enter your email" placeholder="Enter your email" id="email" required>
+    
+            <br>
+    
+            <label for="password"><em><b>Enter your password:</b></em> </label>
+            <input type="password" name="Enter your password" placeholder="Enter your password" id="password" required>
+    
+            <br>
+             
+        <p>Click the button to move to the next section of your information.</p>
+        <input type="button" value="Next">
+    </fieldset>
+
+</div>
+        
+  <div>
+    <fieldset>
+            <legend><b>Additional Information</b></legend>
+            <label for="address"><em><b>Enter your address:</b></em> </label>
+            <input type="text" name="Enter your address" placeholder="Enter your address" id="address" required>
+
+            <br>
+
+            <label for="phone"><em><b>Enter your phone number:</b></em> </label>
+            <input type="tel" name="Enter your phone number" placeholder="Enter your phone number" id="phone" required>
+  </div>
+    
+
+
+  </div>
   
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo iure ducimus veritatis sequi excepturi 
-        reprehenderit ab deleniti quasi, qui corrupti culpa. Saepe debitis maiores quasi. Optio autem at voluptatum modi?
-    </p>
-    </body>
+            <br>
+
+         </fieldset>
+
+         <fieldset>
+             <legend>Preferences</legend>
+            <label for="newsletter"><em><b>Subscribe to our newsletter:</b></em> </label>
+            <input type="checkbox" name="newsletter" id="newsletter">
+         </fieldset>
+        
+         <p>Click the button to submit your information.</p>
+         <button type="submit">Submit</button>
+     </form>
+    </main>
+    <footer>
+        <p>© 2025 Nevv's website, <b>All rights reserved</b></p>
+    </footer>
+</body>
 </html>
